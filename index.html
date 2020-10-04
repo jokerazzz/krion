@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRION</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a href="home.html"><img src="images/logo.png" alt=""></a>
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
                 </div>
                 <nav class="header__nav">
                     <div class="header__contact">
@@ -23,7 +23,7 @@
                     <div class="header__menu">
                         <ul>
                             <li>
-                                <a class="active" href="index.html">Криосауны</a>
+                                <a class="active" href="products.html">Криосауны</a>
                             </li>
                             <li>
                                 <a href="#">Доп. комплекции</a>
@@ -43,8 +43,10 @@
                             <li class="header__menu-email">
                                 <a  href="mailto:info@krion.ru">info@krion.ru </a>
                             </li>
+                            
                         </ul>
                     </div>
+                    
                 </nav>
                 <div class="menu__btn">
                     <span></span>
@@ -53,17 +55,63 @@
                 </div>
             </div>
         </div>
+        
     </header>
-    <section class="breadcrumbs">
+    <section class="slider">
+        <div class="slider__item-img">
+            <img src="images/main/slider.jpg" alt="">
+        </div>
         <div class="container">
-            <div class="breadcrumbs__inner">
-                <span><a href="index.html">Главная </a>></span>
-                <span>Криосауны</span>
+            <div class="slider__item">
+                <div class="slider__text">
+                    Криосауны Krion - оборудование для вашего оздоровления 
+                    <button href="#">Подать заявку</button>
+                </div>
             </div>
+            <button class="slider-btn" type="button">
+                <img src="images/main/Play.png" alt="">
+            </button>
+        </div>
+        
+        <div class="modal_menu">
+            <div class="close"></div>
+            <div class="modal_menu-title">Оставить заявку</div>
+            <form>
+                <input type="text" placeholder="ФИО">    
+                <input type="text" placeholder="Телефон">    
+                <input type="text" placeholder="Email">    
+            </form>
+            <div class="modal_menu-check">
+                <input type="checkbox">
+                <span>Я согласен на обработку моих <a href="#">персональных данных.</a> </span>
+            </div>
+            <div class="modal-btn">
+                <button type="submit">Отправить</button>
+            </div>
+           
         </div>
     </section>
     <section class="products">
         <div class="container">
+            <div  id="products__content">
+                <div id="products__content-title">
+                   <span></span> Крион про
+                </div>
+                <div class="products__content-img">
+                    <img src="images/main/product__content-1.jpg" alt="">
+                </div>
+                <div class="products__content-info">
+                    <div class="content-info__title">КРИОН ПРО</div>
+                    <div class="content-info__text">
+                        Криосауна Крион ПРО — результат работы нашего научно-технического отдела за последние несколько
+                        лет. Совершенно новая модификация криосауны Крион ПРО воплощает ряд инновационных разработок,
+                        обеспечивая пациента максимальным комфортом и безопасностью, а медицинские учреждения
+                        криосаунами нового поколения, с увеличенною пропускной способностью и высокими показателями
+                        отказоустойчивости и экономного расхода азота.
+                    </div>
+                    <a href="#" class="content-info__btn">Купить</a>
+                </div>
+            </div>
             <div class="products__title">Криосауны</div>
             <div class="products__inner">
                 <div class="wrapper__item">
@@ -71,7 +119,7 @@
                         <div class="product__item-img">
                             <img src="images/item-1.jpg" alt="изображение">
                         </div>
-                        <span><a href="quiz.html">Крион про</a> </span>
+                        <span>Крион про</span>
                     </div>
                 </div>
 
@@ -80,13 +128,13 @@
                         <div class="product__item-img">
                             <img src="images/item-2.jpg" alt="изображение">
                         </div>
-                        <span><a href="#"> Крион <br> минипро</a></span>
+                        <span>Крион <br> минипро</span>
                     </div>
                     <div class="products__item">
                         <div class="product__item-img">
                             <img src="images/item-3.jpg" alt="изображение">
                         </div>
-                        <span><a href="#">Крион <br> премиум</a></span>
+                        <span>Крион <br> премиум</span>
                     </div>
                 </div>
                 <div class="wrapper__item">
@@ -94,137 +142,103 @@
                         <div class="product__item-img">
                             <img src="images/item-4.jpg" alt="изображение">
                         </div>
-                        <span><a href="#">Крион <br> стандарт</a> </span>
+                        <span>Крион <br> стандарт</span>
                     </div>
 
                     <div class="products__item">
                         <div class="product__item-img">
                             <img src="images/item-5.jpg" alt="изображение">
                         </div>
-                        <span><a href="#">Крион VIP</a> </span>
+                        <span>Крион VIP</span>
                     </div>
+                </div>
+            </div>
+            <div class="products__content">
+                <div class="products__content-img">
+                    <img src="images/main/product__content-1.jpg" alt="">
+                </div>
+                <div class="products__content-info">
+                    <div class="content-info__title">КРИОН ПРО</div>
+                    <div class="content-info__text">
+                        Криосауна Крион ПРО — результат работы нашего научно-технического отдела за последние несколько
+                        лет. Совершенно новая модификация криосауны Крион ПРО воплощает ряд инновационных разработок,
+                        обеспечивая пациента максимальным комфортом и безопасностью, а медицинские учреждения
+                        криосаунами нового поколения, с увеличенною пропускной способностью и высокими показателями
+                        отказоустойчивости и экономного расхода азота.
+                    </div>
+                    <a href="#" class="content-info__btn">Купить</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="info">
+    <section class="clients">
         <div class="container">
-            <div class="info__inner">
-                <div class="info__title">Криосауны KRION R&D</div>
-                <p>
-                    Криосауна Krion — новейшее оборудование для оздоравливающего воздействия на весь организм. Оно не
-                    только корректирует физиологические процессы,восстанавливает природный баланс, стимулирует обмен
-                    веществ и иммунную систему, но и представляет собой незаменимого помощника в борьбе с лишним весом,
-                    целлюлитом, способствует омоложению и общему укреплению организма.
-                </p> <br> <br>
-                <p>
-                    Процедуры в криосаунах Krion – быстротечны (2-3 мин.), вызывают быструю позитивную реакцию. Они не
-                    требуют специальной подготовки, могут назначаться пожилым людям и детям от 3-х лет. Криотерапия
-                    способна купировать боль различного происхождения. Результат наблюдается уже через 5-10 мин. и
-                    продолжается не менее 6 часов.
-                </p> <br> <br>
-                <p>
-                    Самым надежным и безопасным устройством для проведения криотерапии, являются криосауны
-                    КАЭКТ-01-«КРИОН», в которых пациент погружен в криогенный газ только по плечи. Пространство над
-                    верхним сечением криосауны вентилируется, поэтому пациент дышит чистым атмосферным воздухом. Для
-                    работы с пациентами различного роста каждая криосауна оснащается подъемным полом.
-                </p> <br> <br>
-                <p>
-                    Криосауна занимает всего 4 м2 и для ее размещения подойдут даже сравнительно небольшие помещения (от
-                    12 м2).
-                </p> <br> <br>
-                <p>
-                    Криосауна состоит из кабины пациента, подъемного устройства, насоса для перекачки жидкого азота и
-                    сосуда Дьюара для хранения жидкого азота.
-                </p>
+            <div class="clients-title">Для клиентов</div>
+            <div class="clients__inner">
+                <div class="clients__item">
+                    <div class="clients__item-title">Как приобрести?</div>
+                    <div class="clients__item-info">
+                        Для того, чтобы заказать криосауну, вы можете связаться с нами по телефону + 7 (812) 301-29-70.
+                    </div>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+                <div class="clients__item">
+                    <div class="clients__item-title">Где и как купить?</div>
+                    <div class="clients__item-info">
+                        Для того, чтобы заказать криосауну, вы можете связаться с нами по телефону + 7 (812) 301-29-70.
+                    </div>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+                <div class="clients__item">
+                    <div class="clients__item-title">Сервис</div>
+                    <div class="clients__item-info">
+                        Для того чтобы понять, как действуют на человека криогенные температуры, НПП "Крион" рекомендует
+                        пройти процедуру
+                    </div>
+                    <a href="#">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <div class="partners__title">Наши партнеры</div>
+            <div class="partners__inner">
+                <img src="images/main/partners-logo.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contacts__map">
+        <div class="contacts__title">Контакты</div>
+        <div class="container">
+            <div class="contacts__map-inner">
+                <div class="contacts__item">
+                    <div class="contacts__item-title">ООО «НПП «КРИОН»</div>
+                    <div class="contacts__item-info">
+                        197349 Санкт-Петербург, Макулатурный проезд 4, литер А, пом 120-121
+                    </div>
+                    <div class="contacts__item-phone">
+                        <span>Tel:<a href="tel:78123012970">+7 812 301-29-70</a></span>
+                        <a href="tel:78126792826">+7 812 679-28-26</a>
+                    </div>
+                    <div class="contacts__item-email">
+                        <span>E-mail:<a href="mailto:info@krion-global.com"> info@krion-global.com</a></span>
+                        <a href="mailto:sales@krion-global.com">sales@krion-global.com</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            
+        
+    </section>
 
-            </div>
-        </div>
-    </section>
-    <section class="benefits">
-        <div class="container">
-            <div class="benefits__title">Основные преимущества</div>
-            <div class="benefits__inner">
-                <div class="benefits__item">
-                    <div class="benefits__img">
-                        <img src="images/benefit-1.png" alt="">
-                    </div>
-                    <span>Расходные материалы</span>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__img">
-                        <img src="images/benefit-2.png" alt="">
-                    </div>
-                    <span>Рентабельность</span>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__img">
-                        <img src="images/benefit-3.png" alt="">
-                    </div>
-                    <span>Требования к помещению</span>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__img">
-                        <img src="images/benefit-4.png" alt="">
-                    </div>
-                    <span>Область применения</span>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__img">
-                        <img src="images/benefit-5.png" alt="">
-                    </div>
-                    <span>Дизайн</span>
-                </div>
-                <div class="benefits__item">
-                    <div class="benefits__img benefits__img-pad">
-                        <img src="images/benefit-6.png" alt="">
-                    </div>
-                    <span>Криотерапия</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="descr">
-        <div class="container">
-            <div class="descr__title">
-                Процесс применения криосауны
-            </div>
-            <div class="descr__inner">
-                <p>
-                    1. Человек на короткое время по шею погружается в слой охлажденного до температуры не выше -130° С
-                    криогенного газа (азота). В ходе процедуры кожа пациента охлаждается до –2 °С, реакция системы
-                    терморегуляции на переохлаждение кожи обеспечивает физиотерапевтический результат. В камеру подается
-                    криогенный газ (азот), при этом снижение температуры от 20 до -160 °С происходит в течение 15 с,
-                    после чего достигнутый уровень температуры автоматически поддерживается почти неизменным. В ходе
-                    процедуры выделяют две фазы: подготовительную и результативную.
-                </p> <br>
-                <p>
-                    Подготовительная фаза процедуры занимает не менее 120 с и обеспечивает охлаждение кожи от
-                    нормального состояния до температуры 0 0С. Физиотерапевтический эффект процедуры на этом этапе очень
-                    маленький.
-                </p> <br>
-                <p>
-                    2. На втором этапе по мере приближения температуры поверхности кожи к –2° С, стимулирующее действие
-                    процедуры возрастает. Продолжительность второй фазы определяет физиотерапевтический результат
-                    процедуры. Следует помнить:
-                </p> <br>
-                <p>
-                    Процедуры продолжительностью менее 120 c неэффективны.
-                    Для достижения высокого лечебного эффекта следует уже на втором сеансе устанавливать экспозицию
-                    процедуры не менее 150 с. <br>
-                    Криосауна КАЭКТ-01-«КРИОН» разрешена к применению и сертифицирована в России, Латвии, Эстонии,
-                    Казахстане, Беларуси, Израиле, Польше и Украине, Америке, Финляндии, Словакии, Германии, Южной
-                    Корее.
-                </p>
-            </div>
-        </div>
-    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__links" id="product-menu" >
+                <div class="footer__links" id="product-menu">
                     <span class="footer__links-title" id="product">Криосауны</span>
-                    <ul >
+                    <ul>
                         <li>
                             <a href="">Крион про</a>
                         </li>
@@ -241,7 +255,7 @@
                 </div>
                 <div class="footer__links" id="about-menu">
                     <span class="footer__links-title" id="about">О компании</span>
-                    <ul >
+                    <ul>
                         <li>
                             <a href="">Партнеры</a>
                         </li>
@@ -278,9 +292,8 @@
             </div>
         </div>
     </footer>
+
     <div class="b-color"></div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/main.js"></script>
