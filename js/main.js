@@ -49,6 +49,8 @@ $( function () {
         $('.buttons').toggleClass('active'),
         $('.fa-chevron-up').toggleClass('active');
     });
+
+    
     
     $('.tabs__dropdowns span').on('click', function(){
         $('.tabs__btn button').toggleClass('active'),
@@ -84,44 +86,80 @@ $( function () {
     });
 
     
-    
 
-    $('.certification__slider').slick({
-        slidesToShow: 4,
-        infinite: true,
-        dots: true,
-        slidesToScroll:4,
-        prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-        nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-        responsive: [
-            {
-                breakpoint: 660,
-                settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: false
-            }
+    var mySwiper = new Swiper('.company__slider .swiper-container', {
+        slidesPerView:'auto',
+        loop: true,
+        spaceBetween:140,
+        centeredSlides: true,
+        grabCursor: true,
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-        ]
-      });
-
-
-      $('.partners__slider').slick({
-        slidesToShow: 1,
-        infinite: true,
-        dots: true,
-        prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-        nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-        responsive: [
-            {
-                breakpoint: 660,
-                settings: {
-                arrows: false,
-                }
-            },
-        ]
-      });
       
-      
+        
+      });
     
+
+
+      var mySwiper = new Swiper('.certification__slider .swiper-container', {
+        // Optional parameters
+        slidesPerView:4,
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable:true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        
+      })
+    // $('.certification__slider').slick({
+    //     slidesToShow: 4,
+    //     infinite: true,
+    //     dots: true,
+    //     slidesToScroll:4,
+    //     prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    //     nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+    //     responsive: [
+    //         {
+    //             breakpoint: 660,
+    //             settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2,
+    //             arrows: false
+    //         }
+    //     },
+    //     ]
+    //   });
+
+
+    //   $('.partners__slider').slick({
+    //     slidesToShow: 1,
+    //     infinite: true,
+    //     dots: true,
+    //     prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    //     nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+    //     responsive: [
+    //         {
+    //             breakpoint: 660,
+    //             settings: {
+    //             arrows: false,
+    //             }
+    //         },
+    //     ]
+    //   });
+      
+      
+      
 });

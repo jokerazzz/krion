@@ -100,18 +100,22 @@
             </div>
             <div class="form__buttons">
                 <div class="dropdown__btn">
-                    <i class="fas fa-phone-alt"></i> Обратный звонок<i class="fas fa-chevron-up"></i>
+                    <!-- <i class="fas fa-phone-alt"></i> Обратный звонок<i class="fas fa-chevron-up"></i> -->
+                    <span class="active" id="vid">Обратный звонок<i class="fas fa-chevron-up"></i></span>
+                        <span id="artic">Написать на Email<i class="fas fa-chevron-up"></i></span>
+                        <span id="pho">Написать в чат<i class="fas fa-chevron-up"></i></span>
                 </div>
                 <div class="buttons">
-                    <button><i class="fas fa-phone-alt"></i>Обратный звонок</button>
-                    <button><i class="fas fa-envelope"></i>Написать на Email</button>
-                    <button><i class="far fa-comments"></i>Написать в чат</button>
+                    <button type="button" id="video"><i class="fas fa-phone-alt"></i>Обратный звонок</button>
+                    <button type="button" id="article"><i class="fas fa-envelope"></i>Написать на Email</button>
+                    <button type="button" id="photo"><i class="far fa-comments"></i>Написать в чат</button>
                 </div>
             </div>
             <form class="form">
                 <label>Оформить заказ</label>
                 <input type="text" placeholder="Имя">
                 <input type="text" placeholder="Email">
+                <input type="text" placeholder="Номер телефона">
                 <textarea placeholder="Ваше сообщение"></textarea>
                 <div class="form__check">
                     <input type="checkbox">

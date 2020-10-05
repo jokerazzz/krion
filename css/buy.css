@@ -311,22 +311,36 @@ body {
     margin-bottom: 80px;
 }
 
+.dropdown__btn span {
+    transition: all .2s; 
+    width: 100%;
+    display: block;
+    padding: 14px;
+    border: 1px solid #64C9E6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #64C9E6;
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
 .dropdown__btn {
     display: none;
-    padding: 20px 46px 20px 46px;
-    border:1px solid #64C9E6;
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 50px;
-    color:  #64C9E6;
-    font-size: 20px;
-    transition: all .2s;
+}
+
+.dropdown__btn span.active {
+    display: block;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
 }
+
+
 
 .buttons button {
     padding: 20px 46px;
@@ -338,6 +352,12 @@ body {
     color:  #64C9E6;
     font-size: 20px;
     transition: all .2s;
+    outline: none;
+}
+
+.buttons button:focus{
+    background-color: #64C9E6;
+    color: #fff;
 }
 
 .buttons button:last-child {
@@ -712,11 +732,13 @@ body {
     .dropdown__btn {
         display: block;
         text-align: center;
-        padding: 15px 40px;
+        /* padding: 15px; */
         font-size: 16px;
         position: relative;
         margin-bottom: 10px;
     }
+
+
     .fa-chevron-up {
         position: absolute;
         right: 32px;

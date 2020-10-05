@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KRION</title>
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/company.css">
 </head>
 
@@ -27,7 +28,7 @@
                                 <a href="products.html">Криосауны</a>
                             </li>
                             <li>
-                                <a href="#">Доп. комплекции</a>
+                                <a href="equipment.html">Доп. комплекции</a>
                             </li>
                             <li>
                                 <a href="buy.html">Купить</a>
@@ -78,11 +79,21 @@
                 </p>
             </div>
         </div>
-        <div class="company__slider-inner">
-            <div class="carousel" id="carousel">
-                
+        <div class="company__slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/company/slider-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/company/slider-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/company/slider-1.jpg" alt=""></div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
         </div>
+
+
         <div class="container">
             <div class="company__info">
                 <div class="company__info-title">Первая криосауна</div>
@@ -100,21 +111,44 @@
     <section class="certification">
         <div class="container">
             <div class="certification__title">Сертификаты</div>
-            <div class="certification__slider-inner">
-                <div class="certification__slider">
-                    <img src="images/company/certif-1.png" alt="">
-                    <img src="images/company/certif-2.png" alt="">
-                    <img src="images/company/certif-3.png" alt="">
-                    <img src="images/company/certif-4.png" alt="">
-                    <img src="images/company/certif-1.png" alt="">
-                    <img src="images/company/certif-2.png" alt="">
-                    <img src="images/company/certif-3.png" alt="">
-                    <img src="images/company/certif-4.png" alt="">
+            <div class="certification__slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/company/certif-4.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
+
         </div>
-        
-        
+
+
     </section>
     <section class="partners">
         <div class="container">
@@ -194,7 +228,9 @@
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="js/swiper.js"></script> -->
+    <!-- <script src="js/slick.min.js"></script> -->
     <script src="js/tabs.js"></script>
     <script src="js/main.js"></script>
 </body>
