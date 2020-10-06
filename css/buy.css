@@ -355,7 +355,7 @@ body {
     outline: none;
 }
 
-.buttons button:focus{
+.buttons #video.active{
     background-color: #64C9E6;
     color: #fff;
 }
@@ -400,6 +400,19 @@ body {
     outline: none;
 }
 
+.form #number.active,
+.form #email.active{
+    display: block;
+}
+
+.form #number {
+    display: none;
+}
+
+.form #email {
+    display: none;
+}
+
 .form textarea {
     height: 226px;
     margin-bottom: 29px;
@@ -413,6 +426,8 @@ body {
     width: auto;
     margin-right: 10px;
 }
+
+
 
 .form__check span{
     color: #3F3F3F;

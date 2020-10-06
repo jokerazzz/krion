@@ -298,16 +298,28 @@ body {
     margin-bottom: 80px;
 }
 
+.dropdown__btn span {
+    transition: all .2s; 
+    width: 100%;
+    display: block;
+    padding: 14px;
+    border: 1px solid #64C9E6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #64C9E6;
+    display: none;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
 .dropdown__btn {
     display: none;
-    padding: 20px 46px 20px 46px;
-    border:1px solid #64C9E6;
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 50px;
-    color:  #64C9E6;
-    font-size: 20px;
-    transition: all .2s;
+}
+
+.dropdown__btn span.active {
+    display: block;
 }
 
 .buttons {
@@ -325,6 +337,12 @@ body {
     color:  #64C9E6;
     font-size: 20px;
     transition: all .2s;
+    outline: none;
+}
+
+.buttons #video.active{
+    background-color: #64C9E6;
+    color: #fff;
 }
 
 .buttons button:last-child {
@@ -365,6 +383,19 @@ body {
     margin-bottom: 25px;
     border: none;
     outline: none;
+}
+
+.form #number.active,
+.form #email.active{
+    display: block;
+}
+
+.form #number {
+    display: none;
+}
+
+.form #email {
+    display: none;
 }
 
 .form textarea {

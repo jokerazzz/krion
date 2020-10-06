@@ -301,7 +301,9 @@ body {
 .partnership__banner {
     position: relative;
     max-height: 428px;
-    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -402,6 +404,7 @@ body {
 .bottom__banner {
     margin-bottom: 80px;
     display: flex;
+    justify-content: center;
 }
 
 .bottom__banner-item {

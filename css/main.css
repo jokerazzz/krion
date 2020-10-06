@@ -308,6 +308,8 @@ body {
     border-radius: 50px;
     margin-top: 46px;
     border: none;
+    cursor: pointer;
+    outline: none;
 }
 
 .modal_menu {
@@ -638,6 +640,7 @@ body {
     display: flex;
     justify-content: space-between;
     min-height: 391px;
+    padding-bottom: 5px;
 }
 
 .clients__item {
@@ -676,6 +679,10 @@ body {
     position: absolute;
     bottom: 35px;
     left: 35px;
+}
+
+.clients__item a:hover {
+    text-decoration: underline;
 }
 
 .partners {
@@ -742,6 +749,10 @@ body {
 
 .contacts__item-phone a {
     color: #252525;
+}
+
+.contacts__item-phone a:nth-child(2){
+    margin-left: 32px;
 }
 
 .contacts__item-phone a:nth-child(3) {
@@ -1191,7 +1202,8 @@ body {
     .contacts__item-email a {
         display: block;
     }
-    .contacts__item-email a:nth-child(2) {
+    .contacts__item-email a:nth-child(2),
+    .contacts__item-phone a:nth-child(2){
         margin-left: 0;
     }
     .contacts__item {

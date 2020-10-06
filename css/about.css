@@ -318,6 +318,11 @@ body {
     cursor: pointer;
 }
 
+.tabs__btn button.active{
+    background-color: #64C9E6;
+    color: #fff;
+}
+
 .tabs__btn button:last-child {
     margin-right: 0;
 }
@@ -405,6 +410,10 @@ body {
     display: inline-block;
     color: #64C9E6;
     font-size: 18px;
+}
+
+.about__item.article .article__info a:hover {
+    text-decoration: underline;
 }
 
 .about__item-img img {
@@ -959,12 +968,12 @@ body {
         transition: all .3s;
     }
 
-    .tabs__btn button.active {
+    .tabs__btn.active button {
         padding: 14px;
         height: auto;
     }
 
-    .tabs__btn button.active:nth-child(2) {
+    .tabs__btn.active button:nth-child(2) {
         border-top: 1px solid #64C9E6;
         border-bottom: 1px solid #64C9E6;
     }
