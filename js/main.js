@@ -1,5 +1,14 @@
 $( function () {
     
+
+    $('.b-color').on('click', function() {
+        $('.modal_menu').removeClass('active');
+        $('.header__menu').removeClass('active');
+        $('.b-color').removeClass('modal');
+        $('.b-color').removeClass('active');
+    });
+
+
     $('#product').on('click', function(){
         $('#product-menu').toggleClass('active');
 
