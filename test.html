@@ -26,19 +26,19 @@
                     <div class="quiz__question-title">Куда?</div>
                     <div class="answer__inner">
                         <div class="answer">
-                            <input data-char="65" class="answer__input" type="radio" id="answer_1" name="smoke">
+                            <input data-char="65" class="answer__input" type="radio" id="answer_1" name="page-1" value="answer_1">
                             <label class="answer__label" for="answer_1"><img src="images/home-quiz.png" alt=""></label>
-                            <span>1</span>
+                            <span>Домой</span>
                         </div>
                         <div class="answer">
-                            <input data-char="66" class="answer__input" type="radio" id="answer_2" name="smoke">
+                            <input data-char="66" class="answer__input" type="radio" id="answer_2" name="page-1" value="answer_2">
                             <label class="answer__label" for="answer_2"><img src="images/home-quiz2.png" alt=""></label>
-                            <span>2</span>
+                            <span>В бизнесе</span>
                         </div>
                         <div class="answer">
-                            <input data-char="67" class="answer__input" type="radio" id="answer_3" name="smoke">
+                            <input data-char="67" class="answer__input" type="radio" id="answer_3" name="page-1" value="answer_3">
                             <label class="answer__label" for="answer_3"><img src="images/home-quiz3.png" alt=""></label>
-                            <span>3</span>
+                            <span>Государственный заказчик</span>
                         </div>
                     </div>
 
@@ -54,19 +54,19 @@
                     <div class="quiz__question-title">Сколько? (количество процедур в день)</div>
                     <div class="answer__inner">
                         <div class="answer">
-                            <input class="answer__input" type="radio" id="answer_4" name="pizza" value="Yes">
+                            <input class="answer__input" type="radio" id="answer_4" name="page-2" value="answer_4">
                             <label class="answer__label" for="answer_4"><img src="images/test/page2-1.png"
                                     alt=""></label>
                             <span>1-10</span>
                         </div>
                         <div class="answer">
-                            <input class="answer__input" type="radio" id="answer_5" name="pizza" value="No">
+                            <input class="answer__input" type="radio" id="answer_5" name="page-2" value="answer_5">
                             <label class="answer__label" for="answer_5"><img src="images/test/page2-2.png"
                                     alt=""></label>
                             <span>20-30</span>
                         </div>
                         <div class="answer">
-                            <input class="answer__input" type="radio" id="answer_6" name="pizza" value="No">
+                            <input class="answer__input" type="radio" id="answer_6" name="page-2" value="answer_6">
                             <label class="answer__label" for="answer_6"><img src="images/test/page2-3.png"
                                     alt=""></label>
                             <span>30-100</span>
@@ -82,27 +82,30 @@
                         </div>
                     </div>
                     <h1 class="quiz__question">3 шаг</h1>
-                    <div class="quiz__question-title">Как? (планируете проводить процедуру)</div>
+                    <div class="quiz__question-title">Как? (планируете проводить процедуру)
+                    </div>
                     <div class="answer__inner">
+
                         <div class="answer">
-                            <input class="answer__input" type="radio" id="answer_7" name="aliens" value="Yes">
+                            <input class="answer__input" type="radio" id="answer_7" name="page-3" value="answer_7">
                             <label class="answer__label" for="answer_7"><img src="images/test/page3-1.png"
                                     alt=""></label>
                             <span>Поток</span>
                         </div>
                         <div class="answer">
-                            <input class="answer__input" type="radio" id="answer_8" name="aliens" value="No">
+                            <input class="answer__input" type="radio" id="answer_8" name="page-3" value="answer_8">
                             <label class="answer__label" for="answer_8"><img src="images/test/page3-2.png"
                                     alt=""></label>
                             <span>По записи</span>
                         </div>
                         <div class="answer">
-                            <input class="answer__input" type="radio" id="answer_9" name="aliens" value="No">
+                            <input class="answer__input" type="radio" id="answer_9" name="page-3" value="answer_9">
                             <label class="answer__label" for="answer_9"><img src="images/test/page3-3.png"
                                     alt=""></label>
                             <span>VIP</span>
                         </div>
                     </div>
+
                 </div>
                 <div data-question="4" class="quiz__step--4 quiz__step quiz__summary">
                     <div class="container__page">
@@ -114,93 +117,119 @@
                         </div>
                         <div class="quiz__summary-title">Результат</div>
                         <div class="quiz__summary-inner">
-                            <div class="result__item">
-                                <h4>Комплектация «с цистерной»</h4>
-                                <p>
-                                    Растущая популярность криотерапии в мире значительно увеличила интерес к процедуре в
-                                    криосауне у пациентов. В последние годы количество пациентов в день у многих
-                                    организаций эксплуатирующих криосауну превышает 15 человек, а в некоторых случаях
-                                    доходит до 60-70 человек в день. При таком потоке пациентов неизбежно приходится
-                                    задумываться о расходе азота, схеме его доставки и хранения. Так, уже при 15
-                                    процедурах в день, общий объем азота потребляемого в месяц составляет более 1 500
-                                    литров, для чего необходимо 60 сосудов Дьюара. При таких объемах, имея даже парк из
-                                    6 сосудов Дьюара, их придется заправлять через день, что само собой требует затрат
-                                    времени и сил.
-                                </p>
-                            </div>
-                            <div class="summary__item-img">
-                                <img src="images/test/image.png" alt="">
-                            </div>
-                        </div>
-                        <div class="quiz__summary-inner">
-                            <div class="item__icon">
-                                <div class="item__icon-img">
-                                    <img src="images/test/summary1.png" alt="">
+                            <div class="variant__results">
+                                <div class="result__item">
+                                    <h4>Комплектация «с цистерной»</h4>
+                                    <p>
+                                        Растущая популярность криотерапии в мире значительно увеличила интерес к
+                                        процедуре в
+                                        криосауне у пациентов. В последние годы количество пациентов в день у многих
+                                        организаций эксплуатирующих криосауну превышает 15 человек, а в некоторых
+                                        случаях
+                                        доходит до 60-70 человек в день. При таком потоке пациентов неизбежно приходится
+                                        задумываться о расходе азота, схеме его доставки и хранения. Так, уже при 15
+                                        процедурах в день, общий объем азота потребляемого в месяц составляет более 1
+                                        500
+                                        литров, для чего необходимо 60 сосудов Дьюара. При таких объемах, имея даже парк
+                                        из
+                                        6 сосудов Дьюара, их придется заправлять через день, что само собой требует
+                                        затрат
+                                        времени и сил.
+                                    </p>
                                 </div>
-                                <span>В бизнесе</span>
-                            </div>
-                            <div class="item__icon">
-                                <div class="item__icon-img">
-                                    <img src="images/test/summary2.png" alt="">
+                                <div class="summary__item-img">
+                                    <img src="images/test/image.png" alt="">
                                 </div>
-                                <span>10-30</span>
                             </div>
-                            <div class="item__icon">
-                                <div class="item__icon-img">
-                                    <img src="images/test/summary3.png" alt="">
-                                </div>
-                                <span>Поток</span>
-                            </div>
-                            <div class="item__icon">
-                                <div class="item__icon-img">
-                                    <img src="images/test/summary4.png" alt="">
-                                </div>
-                                <span>Всего: 10 монеток</span>
-                            </div>
-                        </div>
-                        <div class="results__form">
-                            <div class="form__buttons">
-                                <div class="dropdown__btn">
+                            <div class="variant__results">
+                                <div class="result__item">
+                                    <h4>Комплектация Стандарт</h4>
+                                    <p>
+                                        Самая продаваемая комплектация криосаун КАЭКТ-01-«Крион» Стандарт, специально
+                                        разработана, как оптимальное соотношение цена – качество. Рассчитана на
+                                        проведение
+                                        от 10 до 50 процедур в день. Данная комплектация криосауны позволяет существенно
+                                        упростить работу с ней и сделать требования для помещения, где она будет
+                                        установлена, менее жесткими. Криосауна КАЭКТ- 01 «Крион» Стандарт подойдет
+                                        абсолютно
+                                        любым пациентам, независимо от их роста, веса и возраста.
+                                    </p>
 
-                                    <span class="active" id="vid">Обратный звонок<i
-                                            class="fas fa-chevron-up"></i></span>
-                                    <span id="artic">Написать на Email<i class="fas fa-chevron-up"></i></span>
-                                    <span id="pho">Написать в чат<i class="fas fa-chevron-up"></i></span>
-                                </div>
-                                <div class="buttons">
-                                    <button class="active" type="button" id="video"><i
-                                            class="fas fa-phone-alt"></i>Обратный
-                                        звонок</button>
-                                    <button type="button" id="article"><i class="fas fa-envelope"></i>Написать на
-                                        Email</button>
-                                    <button type="button" id="photo"><i class="far fa-comments"></i>Написать в
-                                        чат</button>
+                                    <div class="summary__item-img">
+                                        <img src="images/test/image.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <form class="form_result">
-                                <label class="label1">Оформить заказ</label>
-                                <input type="text" placeholder="Имя">
-                                <input id="email" type="text" placeholder="Email">
-                                <input class="active" id="number" type="text" placeholder="Номер телефона">
-                                <textarea placeholder="Ваше сообщение"></textarea>
-                                <div class="form__check">
-                                    <input type="checkbox">
-                                    <span>Я согласен на обработку моих
-                                        <a href="#">персональных данных.</a>
-                                    </span>
-                                </div>
-                                <div class="form__btn">
-                                    <button type="submit">Отправить</button>
-                                </div>
-
-                            </form>
                         </div>
                     </div>
+                    <div class="quiz__summary-inner">
+                        <div class="item__icon">
+                            <div class="item__icon-img">
+                                <img src="images/test/summary1.png" alt="">
+                            </div>
+                            <span>В бизнесе</span>
+                        </div>
+                        <div class="item__icon">
+                            <div class="item__icon-img">
+                                <img src="images/test/summary2.png" alt="">
+                            </div>
+                            <span>10-30</span>
+                        </div>
+                        <div class="item__icon">
+                            <div class="item__icon-img">
+                                <img src="images/test/summary3.png" alt="">
+                            </div>
+                            <span>Поток</span>
+                        </div>
+                        <div class="item__icon">
+                            <div class="item__icon-img">
+                                <img src="images/test/summary4.png" alt="">
+                            </div>
+                            <span>Всего: 10 монеток</span>
+                        </div>
+                    </div>
+                    <div class="results__form">
+                        <div class="form__buttons">
+                            <div class="dropdown__btn">
 
+                                <span class="active" id="vid">Обратный звонок<i class="fas fa-chevron-up"></i></span>
+                                <span id="artic">Написать на Email<i class="fas fa-chevron-up"></i></span>
+                                <span id="pho">Написать в чат<i class="fas fa-chevron-up"></i></span>
+                            </div>
+                            <div class="buttons">
+                                <button class="active" type="button" id="video"><i class="fas fa-phone-alt"></i>Обратный
+                                    звонок</button>
+                                <button type="button" id="article"><i class="fas fa-envelope"></i>Написать на
+                                    Email</button>
+                                <button type="button" id="photo"><i class="far fa-comments"></i>Написать в
+                                    чат</button>
+                            </div>
+                        </div>
+                        <form class="form_result">
+                            <label class="label1">Оформить заказ</label>
+                            <input type="text" placeholder="Имя">
+                            <input id="email" type="text" placeholder="Email">
+                            <input class="active" id="number" type="text" placeholder="Номер телефона">
+                            <textarea placeholder="Ваше сообщение"></textarea>
+                            <div class="form__check">
+                                <input type="checkbox">
+                                <span>Я согласен на обработку моих
+                                    <a href="#">персональных данных.</a>
+                                </span>
+                            </div>
+                            <div class="form__btn">
+                                <button type="submit">Отправить</button>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
+
             </div>
         </section>
     </div>
+
+
 
     <footer class="bottom">
         <div class="progress__title">Готово: <span>20%</span></div>
@@ -220,6 +249,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/test.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -340,7 +340,9 @@ body {
     outline: none;
 }
 
-.buttons #video.active{
+.buttons #video.active,
+.buttons #article.active,
+.buttons #photo.active{
     background-color: #64C9E6;
     color: #fff;
 }
